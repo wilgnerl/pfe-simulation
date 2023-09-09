@@ -47,7 +47,7 @@ def read_task():
         print("Erro no POST. Código de status:", response.status_code)
 
 
-# Agende a função para ser executada a cada minuto
+# Agende a função para ser executada a cada 2 segundos
 schedule.every(2).seconds.do(read_task)
 
 # Execute a agenda em um loop
